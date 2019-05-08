@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup]="addHorseForm" (ngSubmit)="addHorse()">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="horse_name">Name</label>
+            </div>
+            <div class="col-md-6 text-left">
+                <input type="text" formControlName="horse_name" id="horse_name" placeholder="name">
+            </div>
+            <div class="col-md-6">
+                <label for="horse_number">ID</label>
+            </div>
+            <div class="col-md-6 text-left">
+                <input type="text" formControlName="horse_number" id="horse_number" placeholder="id">
+            </div>
+            <div class="col-md-6">
+                <label for="aqha_number">aqhaNumber</label>
+            </div>
+            <div class="col-md-6 text-left">
+                <input type="text" id="aqha_number" formControlName="aqha_number" placeholder="aqhaNumber">
+            </div>
+            <div class="col-md-6">
+                <label for="color">Color</label>
+            </div>
+            <div class="col-md-6 text-left">
+                <input type="text" id="color" formControlName="color" placeholder="color">
+            </div>
+
+            <button class="btn btn-primary">Add</button>
+
+        </div>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+    <!-- <div *ngIf="horse"> -->
+    <div class="row">
+        <h2>{{horse.name}} Details</h2>
+        <div class="col-md-6">Name</div>
+        <div class="col-md-6 text-left">{{horse.horse_name}}</div>
+        <div class="col-md-6">Number</div>
+        <div class="col-md-6 text-left">{{horse.horse_number}}</div>
+        <div class="col-md-6">aqhaNumber</div>
+        <div class="col-md-6 text-left">{{horse.aqha_number}}</div>
+        <div class="col-md-6">Color</div>
+        <div class="col-md-6 text-left">{{horse.color}}</div>
+
+        <div class="col-md-6">Name</div>
+        <div class="col-md-6 text-left">
+            <input type="text" [(ngModel)]="horse.name" placeholder="name">
+        </div>
+        <div class="col-md-6">ID</div>
+        <div class="col-md-6 text-left">
+            <input type="text" [(ngModel)]="horse.id" placeholder="id">
+        </div>
+        <div class="col-md-6">aqhaNumber</div>
+        <div class="col-md-6 text-left">
+            <input type="text" [(ngModel)]="horse.aqhaNumber" placeholder="aqhaNumber">
+        </div>
+
+        <button class="btn btn-primary" (click)="goBack()">Go Back</button>
+    </div>
+</div>

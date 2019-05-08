@@ -1,0 +1,44 @@
+<!-- <div class="panel-group"> -->
+<!-- <div class="panel panel-default"> -->
+<!-- <div class="panel-heading"> -->
+<h2 class="text-center">Horse List</h2>
+<!-- </div> -->
+<!-- </div> -->
+<!-- </div> -->
+<div class="container-fluid">
+
+    <div class="row">
+        <!-- <div class="col-md-2"></div> -->
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Id</th>
+                        <th>Horse Name</th>
+                        <th>Horse Number</th>
+                        <th>aqha Number</th>
+                        <th>color</th>
+                        <th>Pic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let horse of horses" (click)="onSelect(horse)" [routerLink]="['/detail/',horse.id]"> -->
+                    <tr *ngFor="let horse of horses">
+                        <td style="word-break:break-word;">{{horse.id}}</td>
+                        <td style="word-break:break-word;">{{horse.horse_name}}</td>
+                        <td style="word-break:break-word;">{{horse.horse_number}}</td>
+                        <td style="word-break:break-word;">{{horse.aqha_number}}</td>
+                        <td style="word-break:break-word;">{{horse.color}}</td>
+                        <td style="word-break:break-word;"><img src="../../assets/horse.jpg" alt="" border=3 height=40 width=40></td>
+                        <td style="word-break:break-word;"><button class="delete" title="deleteHorse" (click)="deleteHorse(horse)">x</button>
+                        </td>
+
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
